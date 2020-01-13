@@ -1,16 +1,24 @@
+// Problem: Write an algorithm to determine if a number is "happy".
+// A happy number is a number defined by the following process: Starting with
+// any positive integer, replace the number by the sum of the squares of its
+// digits, and repeat the process until the number equals 1 (where it will
+// stay), or it loops endlessly in a cycle which does not include 1. Those
+// numbers for which this process ends in 1 are happy numbers.
 //
-//  main.cpp
-//  HappyNumber
+// Solution:
+// For each index in a vector, check if the remaineder is equal to 0
+// If it is, that means the index has a positive value
+// Store that value in a temp variable, replace the index with the next in line
+// and add the temp value to the beginning of the vector
+// Print the Vector
 //
-//  Created by Mital Patel on 1/12/20.
-//  Copyright © 2020 Mital Patel. All rights reserved.
-//
+// Statistics
+// Runtime: 12ms
+// Memory Usage: 8.3MB
 
 #include <iostream>
 #include <list>
 using namespace std;
-
-
 
 class Solution {
 public:
@@ -32,7 +40,6 @@ public:
         return true;
     }
 };
-
 
 int main() {
     Solution A;

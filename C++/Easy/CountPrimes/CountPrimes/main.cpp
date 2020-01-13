@@ -1,18 +1,20 @@
-// How to Solve:
-//
 // Problem: Count the number of prime numbers less than a non-negative number, n.
+//
+// Solution:
 // Create an array of size N that are initalized as true
 // Since i^2 must be less than the size of the array, make that the bound
-// Iterate from 2 to i^2 
+// Iterate from 2 to i^2
 // While iterated, if the number is a prime and its square is less than the array size,
 // set the square value to false
 // in a new loop, iterate through
 // For every occurance of a true value, increase a counter
 // Print the size of the counter
-
+//
+// Statistics:
+// Runtime: 9ms
+// Memory Usage: 35.2MB
 
 #include <iostream>
-
 using namespace std;
 
 class Solution {
@@ -22,7 +24,6 @@ public:
         for(int i = 0; i < n; i++){
             primes[i] = true;
         }
-        
         for(int i = 2; i * i < sizeof(primes); i++){
             if(primes[i]){
                 for(int j = i; j * i < sizeof(primes); j++){
@@ -48,4 +49,3 @@ int main(){
     int primeCount = A.countPrimes(n);
     cout << primeCount << endl;
 }
-    
