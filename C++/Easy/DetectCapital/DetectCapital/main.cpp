@@ -1,4 +1,5 @@
-// Problem: Given a word, you need to judge whether the usage of capitals in
+// Problem:
+// Given a word, you need to judge whether the usage of capitals in
 // it is right or not.
 // We define the usage of capitals in a word to be right when one of the
 // following cases holds:
@@ -43,10 +44,10 @@ public:
         }
         return counter == word.length() || counter == 0 || (counter == 1 && isupper(word[0]));
     }
-    
-    
-    
-    
+
+
+
+
     // MY FIRST ATTEMPT
     bool detectCapitalUseFirst(string word) {
         bool valid = false;
@@ -73,6 +74,6 @@ int main() {
     Solution A;
     bool value = A.detectCapitalUse("leetcode");
     cout << value << endl;
-    
-    
+
+
 }

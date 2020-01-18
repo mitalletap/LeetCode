@@ -1,4 +1,5 @@
-// Problem: Given a binary tree, check whether it is a mirror of
+// Problem:
+// Given a binary tree, check whether it is a mirror of
 // itself (ie, symmetric around its center).
 //
 // Solution:

@@ -1,4 +1,5 @@
-// Problem: Find the sum of all left leaves in a given binary tree.
+// Problem:
+// Find the sum of all left leaves in a given binary tree.
 //
 // Solution:
 // Check if the root is null. If it is, return 0.

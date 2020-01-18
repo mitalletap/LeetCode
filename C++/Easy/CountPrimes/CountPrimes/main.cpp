@@ -1,4 +1,5 @@
-// Problem: Count the number of prime numbers less than a non-negative number, n.
+// Problem:
+// Count the number of prime numbers less than a non-negative number, n.
 //
 // Solution:
 // Create an array of size N that are initalized as true

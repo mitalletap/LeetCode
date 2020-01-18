@@ -1,4 +1,5 @@
-// Problem: Given two binary trees, write a function to check if they are the same or not.
+// Problem:
+// Given two binary trees, write a function to check if they are the same or not.
 //
 // Solution:
 // Check if both roots are null. If they are, return false.
@@ -33,7 +34,6 @@ public:
         } else {
             return (isSameTree(p->left, q->left) && isSameTree(p->right, q->right));
         }
-        
+
     }
 };
-
